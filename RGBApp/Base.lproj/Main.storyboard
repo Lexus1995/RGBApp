@@ -18,7 +18,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfo-nk-oby">
                                 <rect key="frame" x="20" y="64" width="388" height="188"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="188" id="3gD-7l-pEZ"/>
                                 </constraints>
@@ -44,8 +43,11 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vam-gP-MNL">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vam-gP-MNL">
                                         <rect key="frame" x="108" y="0.0" width="282" height="31"/>
+                                        <connections>
+                                            <action selector="greenSliderMoved" destination="BYZ-38-t0r" eventType="valueChanged" id="46H-N5-LcT"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -70,8 +72,11 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-0b-U4J">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-0b-U4J">
                                         <rect key="frame" x="108" y="0.0" width="282" height="31"/>
+                                        <connections>
+                                            <action selector="blueSliderMoved" destination="BYZ-38-t0r" eventType="valueChanged" id="Sli-PI-Du1"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -96,10 +101,10 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-RT-6ny">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-RT-6ny">
                                         <rect key="frame" x="108" y="0.0" width="282" height="31"/>
                                         <connections>
-                                            <action selector="redSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="q5o-bo-dEr"/>
+                                            <action selector="redSliderMoved" destination="BYZ-38-t0r" eventType="valueChanged" id="fPu-x7-sum"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -140,9 +145,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
